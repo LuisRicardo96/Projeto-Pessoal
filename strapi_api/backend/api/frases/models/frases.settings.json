@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "frases",
   "info": {
-    "name": "frases"
+    "name": "frases",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,6 +28,198 @@
       "type": "string"
     },
     "frase6": {
+      "type": "string"
+    },
+    "frase7": {
+      "type": "string"
+    },
+    "frase8": {
+      "type": "string"
+    },
+    "frase9": {
+      "type": "string"
+    },
+    "frase10": {
+      "type": "string"
+    },
+    "frase11": {
+      "type": "string"
+    },
+    "frase12": {
+      "type": "string"
+    },
+    "frase13": {
+      "type": "string"
+    },
+    "frase14": {
+      "type": "string"
+    },
+    "frase15": {
+      "type": "string"
+    },
+    "frase16": {
+      "type": "string"
+    },
+    "frase17": {
+      "type": "string"
+    },
+    "frase18": {
+      "type": "string"
+    },
+    "frase19": {
+      "type": "string"
+    },
+    "frase20": {
+      "type": "string"
+    },
+    "frase21": {
+      "type": "string"
+    },
+    "frase22": {
+      "type": "string"
+    },
+    "frase23": {
+      "type": "string"
+    },
+    "frase24": {
+      "type": "string"
+    },
+    "frase25": {
+      "type": "string"
+    },
+    "frase26": {
+      "type": "string"
+    },
+    "frase27": {
+      "type": "string"
+    },
+    "frase28": {
+      "type": "string"
+    },
+    "frase29": {
+      "type": "string"
+    },
+    "frase30": {
+      "type": "string"
+    },
+    "frase31": {
+      "type": "string"
+    },
+    "frase32": {
+      "type": "string"
+    },
+    "frase33": {
+      "type": "string"
+    },
+    "frase34": {
+      "type": "string"
+    },
+    "frase35": {
+      "type": "string"
+    },
+    "frase36": {
+      "type": "string"
+    },
+    "frase37": {
+      "type": "string"
+    },
+    "frase38": {
+      "type": "string"
+    },
+    "frase39": {
+      "type": "string"
+    },
+    "frase40": {
+      "type": "string"
+    },
+    "frase41": {
+      "type": "string"
+    },
+    "frase42": {
+      "type": "string"
+    },
+    "frase43": {
+      "type": "string"
+    },
+    "frase44": {
+      "type": "string"
+    },
+    "frase45": {
+      "type": "string"
+    },
+    "frase46": {
+      "type": "string"
+    },
+    "frase47": {
+      "type": "string"
+    },
+    "frase48": {
+      "type": "string"
+    },
+    "frase49": {
+      "type": "string"
+    },
+    "frase50": {
+      "type": "string"
+    },
+    "frase51": {
+      "type": "string"
+    },
+    "frase52": {
+      "type": "string"
+    },
+    "frase53": {
+      "type": "string"
+    },
+    "frase54": {
+      "type": "string"
+    },
+    "frase55": {
+      "type": "string"
+    },
+    "frase56": {
+      "type": "string"
+    },
+    "frase57": {
+      "type": "string"
+    },
+    "frase58": {
+      "type": "string"
+    },
+    "frase59": {
+      "type": "string"
+    },
+    "frase60": {
+      "type": "string"
+    },
+    "frase61": {
+      "type": "string"
+    },
+    "frase62": {
+      "type": "string"
+    },
+    "frase63": {
+      "type": "string"
+    },
+    "frase64": {
+      "type": "string"
+    },
+    "frase65": {
+      "type": "string"
+    },
+    "frase66": {
+      "type": "string"
+    },
+    "frase67": {
+      "type": "string"
+    },
+    "frase68": {
+      "type": "string"
+    },
+    "frase69": {
+      "type": "string"
+    },
+    "frase70": {
       "type": "string"
     }
   }

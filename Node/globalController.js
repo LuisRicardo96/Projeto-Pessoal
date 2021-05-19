@@ -8,51 +8,26 @@ const request = require('request');
 module.exports = function(app){
 
     app.get('/', function(req, res, next){
+
+     //midlleware
+
      
-      const url = "http://localhost:1337/Articles";
+      const url = "http://localhost:1337/Frases";
       
       request.get(url, (error, response, body) => {
-        let json = JSON.parse(body); // guarda o conteudo de artigos na variavel
-        console.log(json);
+        let frases = JSON.parse(body); // guarda o conteudo de artigos na variavel
+       
+       
+      
 
-        const url = "http://localhost:1337/Featured";
-      
-        request.get(url, (error, response, body) => {
-          let featured = JSON.parse(body);
-          
+       
         
         
-        const url = "http://localhost:1337/Content"; // os mais novos
-      
-        request.get(url, (error, response, body) => {
-          let content = JSON.parse(body);
-            
-        const url = "http://localhost:1337/Projetos";
-      
-        request.get(url, (error, response, body) => {
-            let projetos = JSON.parse(body);
-
-            const url = "http://localhost:1337/Projetos?sessao=colar";
-      
-            request.get(url, (error, response, body) => {
-                let colar = JSON.parse(body);
-
-                const url = "http://localhost:1337/Projetos?sessao=tornozeleira";
-      
-            request.get(url, (error, response, body) => {
-                let tornozeleira = JSON.parse(body);
-              
-        
-        
-        res.render('index', {dict: json, featured: featured, content: content, projetos: projetos, colar: colar, tornozeleira: tornozeleira}); // renderização
+        res.render('index', {frases: frases }); // renderização
           
      });
     });
-    });
-    });
-   });
-  });
-  });
+    
 
 
 
