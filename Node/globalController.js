@@ -16,6 +16,17 @@ module.exports = function(app){
       
       request.get(url, (error, response, body) => {
         let frases = JSON.parse(body); // guarda o conteudo de artigos na variavel
+
+        const url = "http://localhost:1337/Fotos";
+      
+      request.get(url, (error, response, body) => {
+        let fotos = JSON.parse(body);
+
+        const url = "http://localhost:1337/Projetos";
+      
+      request.get(url, (error, response, body) => {
+        let projetos = JSON.parse(body);
+       
        
        
       
@@ -23,10 +34,12 @@ module.exports = function(app){
        
         
         
-        res.render('index', {frases: frases }); // renderização
+        res.render('index', {frases: frases, fotos: fotos, projetos: projetos}); // renderização
           
      });
     });
+    });
+  });
     
 
 

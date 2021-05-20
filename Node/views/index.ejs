@@ -133,12 +133,14 @@
           </nav>
         </section>
 
+        <h2><%- fotos.foto1[0].url %> </h2>
+
         <script type="text/javascript">
         var dataHeader = [
                             {
-                              bigImage :"images/slide-1.jpg",
+                              bigImage :"http://localhost:1337<%- fotos.foto1[0].url %>",
                               title : "<%- frases.frase1 %>",
-							  author : "Templatestock"
+							                author : "Templatestock"
                             },
                             {
                               bigImage :"images/slide-2.jpg",
@@ -228,67 +230,25 @@
           </ul>
         </div>
 
+       
+       
         <div class="row">
           <div class="container-portfolio">
             <!-- PORTFOLIO OBJECT -->
             <script type="text/javascript">
             var portfolio = [
+            <% for(var i = 0; i < projetos.length; i++) { %>
+             
                     {
-                      category : "branding",
-                      image : "images/p-1.png",
-                      title : "<span><%- frases.frase19 %></span>",
+                      category : "<%- projetos[i].category  %>", 
+                      image : "http://localhost:1337<%- projetos[i].image[0].formats.small.url %>",
+                      title : "<%- projetos[i].title %>",
                       link : "#none",
-                      text : "<%- frases.frase20 %>."
+                      text : "<%- projetos[i].text %>"
                     },
-                    {
-                      category : "graphic",
-                      image : "images/p-2.png",
-                      title : "<span><%- frases.frase21 %></span>",
-                      link : "#none",
-                      text : "<%- frases.frase22 %>"
-                    },
-                    {
-                      category : "graphic",
-                      image : "images/p-3.png",
-                      title : "<span><%- frases.frase23 %></span>",
-                      link : "#none",
-                      text : "frases"
-                    },
-                    {
-                      category : "video",
-                      image : "images/p-4.png",
-                      title : "<span><%- frases.frase25 %></span>",
-                      link : "#none",
-                      text : "<%- frases.frase26 %>"
-                    },
-                    {
-                      category : "branding",
-                      image : "images/p-5.png",
-                      title : "<span><%- frases.frase27 %></span>",
-                      link : "#none",
-                      text : "<%- frases.frase27 %>"
-                    },
-                    {
-                      category : "printing",
-                      image : "images/p-6.png",
-                      title : "<span><%- frases.frase28 %></span>",
-                      link : "#none",
-                      text : "<%- frases.frase29 %>"
-                    },
-                    {
-                      category : "printing",
-                      image : "images/p-7.png",
-                      title : "<span><%- frases.frase30 %></span>",
-                      link : "#none",
-                      text : "<%- frases.frase31 %>"
-                    },
-                    {
-                      category : "printing",
-                      image : "images/p-8.png",
-                      title : "<span><%- frases.frase32 %></span>",
-                      link : "#none",
-                      text : "<%- frases.frase33 %>"
-                    }
+                    
+                    <% } %> 
+                   
                 ];
             </script>
           </div>
